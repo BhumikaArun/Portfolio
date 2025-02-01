@@ -1,0 +1,81 @@
+
+body {
+    color: #ffffff;
+  }
+  
+
+  .navbar {
+    animation: slideDown 1s ease-in-out;
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+  .navbar-nav {
+    display: flex;
+    gap: 60px;
+    margin-right: 70px;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    background-color: grey;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+  }
+  
+
+  .container .col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+  }
+  
+  h4, h3 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+  }
+  
+
+  .btn {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  .col img {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+
+  .acc, .as {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .acc:hover, .as:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  

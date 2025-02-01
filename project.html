@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            margin-top: 15px;
+            overflow: hidden;
+            background-image: url('https://t3.ftcdn.net/jpg/03/91/46/10/360_F_391461057_5P0BOWl4lY442Zoo9rzEeJU0S2c1WDZR.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #e0e0e0;
+        
+        }
+        h2 {
+            font-size: 2rem;
+            
+            color: white;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 10px;
+            
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            color: rgb(33, 33, 77);
+        }
+        .card-text {
+            font-size: 1rem;
+            color: #666;
+        }
+        .tech-icons {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<h2 class="text-center">My Projects</h2>
+<div class="container" id="projects">
+    
+    <div class="row">
+        <!-- Project 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://img.freepik.com/premium-vector/snake-mascot-logo-design_7737-2431.jpg" alt="Project 1" >
+                <div class="card-body">
+                    <h5 class="card-title">Snake Game</h5>
+                    <p class="card-text">A classic Snake Game built using Python's Turtle graphics and OOP principles. The game features smooth animations, score tracking, and game over conditions. It offers an interactive experience as the snake grows and avoids obstacles.</p>
+                    <p class="tech-icons"><i class="fab fa-python"></i> Python, <i class="fas fa-turtle"></i> Turtle Graphics</p>
+                    <a href="https://github.com/BhumikaArun/Snake-game.git" class="btn btn-primary" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://static.toiimg.com/thumb/resizemode-4,width-1280,height-720,msid-112315852/112315852.jpg" alt="Project 2">
+                <div class="card-body">
+                    <h5 class="card-title">Ice Cream Website</h5>
+                    <p class="card-text">A user-friendly website showcasing a variety of ice cream flavors, interactive cart, and order functionality. It offers a vibrant design with mobile responsiveness, allowing customers to explore and order their favorite ice cream with ease.</p>
+                    <p class="tech-icons"><i class="fas fa-cogs"></i> Django, <i class="fas fa-code"></i> HTML
+
+                    </p>
+                    <a href="https://github.com/BhumikaArun/project-3-using-Django.git" class="btn btn-primary" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQek_cV3OSJqRioATKQm8LB7x8NlKWuKJv0NkNNuGe3jzdq0OWtZFKivd0raY4SQoT9aYk&usqp=CAU" alt="Project 2">
+                <div class="card-body">
+                    <h5 class="card-title">Hangman Game</h5>
+                    <p class="card-text">A classic word-guessing game developed using Python. The player guesses letters to reveal a hidden word within a limited number of incorrect attempts. Implemented using Python's simple logic and basic control structures. </p>
+                    <p class="tech-icons"> <i class="fab fa-python"></i> Python
+
+                    </p>
+                    <a href="https://github.com/BhumikaArun/hungama_game.git" class="btn btn-primary" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

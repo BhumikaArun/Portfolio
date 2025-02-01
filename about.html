@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        .row{
+            margin-top: 150px;
+            
+        }
+        body {
+            background-image: url('https://t3.ftcdn.net/jpg/03/91/46/10/360_F_391461057_5P0BOWl4lY442Zoo9rzEeJU0S2c1WDZR.jpg'); /* Replace with your image URL */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the background image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-attachment: fixed; /* Keeps the background fixed while scrolling */
+            color: #e0e0e0;
+            margin-left: 100px;
+            overflow: hidden;
+        }
+        
+        .modal-header{
+            background-color: white;
+        }
+        .modal-content{
+            background-color: #0a192f;
+        }
+
+        /* Card & Image */
+        .card {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Text Section Animation */
+        .text-start {
+            animation: slideIn 1.5s ease-out;
+        }
+
+        /* Button Animation */
+        .btn-danger {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+        }
+
+        .btn-danger:hover {
+            transform: scale(1.1);
+            box-shadow: 6px 6px 6px rgb(142, 22, 22);
+        }
+
+        /* Modal Animations */
+        .modal-content {
+            background-color: #0a192f;
+            animation: popIn 0.5s ease-in-out;
+        }
+
+        .modal-header {
+            background-color: white;
+        }
+
+        /* Table Border Animation */
+        .table {
+            border: solid red;
+            animation: borderGlow 2s infinite alternate;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes popIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes borderGlow {
+            from {
+                box-shadow: 0 0 5px red;
+            }
+            to {
+                box-shadow: 0 0 15px red;
+            }
+        }
+        
+    </style>
+    
+</head>
+<body>
+    
+    <div class="container text-center">
+        <div class="row d-flex">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://static.vecteezy.com/system/resources/previews/002/413/499/non_2x/all-about-me-neon-signs-style-text-vector.jpg" class="card-img-top" alt="..." height="400px" width="650px">
+              </div>
+          </div>
+          <div class="col-md-8 text-start flex-display:column">
+            <h4 style="color: red;">Discover</h4>
+            <h2>About Me</h2>
+            <p>Hello! I'm Bhumika, a final-year student at Vidyavardhaka College of Engineering, with a CGPA of 8.95. My passion lies in web development, where I specialize in frontend technologies. I have hands-on experience with HTML, CSS, JavaScript, Bootstrap, and Python.
+                I enjoy creating responsive, visually appealing websites and have a strong foundation in Java as well. As a tech enthusiast, I am constantly exploring new tools and technologies to keep improving my skills and stay ahead in the ever-evolving world of web development.
+                In my free time, I work on personal projects and contribute to open-source communities. My goal is to pursue a career in frontend development where I can apply my skills to create impactful and user-friendly experiences.</p>
+
+
+
+                        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-danger px-4 mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: 350px; box-shadow:4px 4px 4px rgb(142, 22, 22)">
+            Click Here 
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-borderless" style="border: solid red; ">
+                        <tbody class="table-group-divider">
+                            <tr>
+                              <td>Name: Bhumika A</td>
+                              <td>Phone: 6362585196</td>
+                            </tr>
+                            <tr>
+                              <td>College: VVCE</td>
+                              <td>Location: Mysore</td>
+                            </tr>
+                            <tr>
+                              <td>Native: Davangere</td>
+                              <td>Branch: CSE</td>
+                            </tr>
+                            <tr>
+                              <td>Experiance: Fresher</td>
+                              <td>Age: 21</td>
+                            </tr>
+                          </tbody>
+                        
+                    </table>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+
+          </div>
+        </div>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
